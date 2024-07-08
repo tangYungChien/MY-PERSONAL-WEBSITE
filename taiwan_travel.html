@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tang個人網頁</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <label for="switch"><img src="./pictures/burger.png" /></label
+      ><!--漢堡按鈕圖示-->
+      <input type="checkbox" id="switch" /><!--選單開關-->
+      <ul>
+        <li><a href="./index.html">首頁</a></li>
+        <li><a href="./resume.html">履歷</a></li>
+        <li><a href="./projects.html">作品集</a></li>
+        <li><a href="./contact.html">聯絡方式</a></li>
+      </ul>
+    </nav>
+
+    <div class="learnMorePage">
+      <div class="learnMorePage_title">
+        <h1>台灣旅遊網</h1>
+        <a
+          href="https://taiwan-travel-tang.vercel.app/"
+          class="learn-more go"
+          target="_blank"
+          >來去逛逛</a
+        >
+      </div>
+
+      <div class="image">
+        <img src="./pictures/taiwan_demo.JPG" alt="" />
+      </div>
+      <p>
+        台灣旅遊網是一個展示台灣各地熱門旅遊景點的網站。該網站提供了精選景點介紹、天氣資訊以及收藏功能，旨在為使用者提供一個便捷的旅遊資訊平台。
+      </p>
+      <h2>功能描述</h2>
+      <h3>首頁</h3>
+      <ul>
+        <li>介紹台灣相關主題及google map地圖位置</li>
+        <li>進入各城市旅遊主題</li>
+      </ul>
+      <h3>精選景點</h3>
+      <ul>
+        <li>展示該城市多個熱門景點，每個景點包含圖片、描述和“加入收藏”按鈕</li>
+        <li>提供各景點相關外部連結</li>
+      </ul>
+      <h3>收藏功能</h3>
+      <ul>
+        <li>允許使用者收藏他們喜愛的景點</li>
+      </ul>
+      <h3>天氣資訊</h3>
+      <ul>
+        <li>提供當地天氣資訊，包括當前天氣和未來一週預報</li>
+        <li>如果當天或未來一週有雨，顯示雨天推薦景點</li>
+      </ul>
+      <h2>技術棧</h2>
+
+      <h3>HTML</h3>
+      <ul>
+        <li>
+          使用<code>&lt;section&gt;</code>、<code>&lt;nav&gt;</code>、<code>&lt;header&gt;</code>、<code>&lt;footer&gt;</code>等<strong>語義化標籤</strong>來提升可讀性
+        </li>
+      </ul>
+      <h3>CSS</h3>
+      <ul>
+        <li>使用SCSS巢狀語法更具結構性</li>
+        <li>使用<strong>Box Model</strong>來控制元素的空間和邊框</li>
+        <li>使用<code>Z-Index</code>來堆疊環境</li>
+        <li>使用<code>display: flex</code>來創建彈性容器</li>
+        <li>
+          使用<code>position: absolute</code>和<code>position: relative</code
+          >來實現元素的精確定位
+        </li>
+        <li>使用<code>transition</code>來實現平滑過渡效果</li>
+        <li>使用<code>&:hover</code>偽類來設置滑鼠懸停效果</li>
+        <li>RWD響應式設計電腦與手機版</li>
+      </ul>
+      <h3>JavaScript</h3>
+      <ul>
+        <li>
+          <code>document.querySelector</code> 和
+          <code>document.querySelectorAll</code>選取DOM元素。
+        </li>
+        <li>
+          <code>forEach</code>
+          方法用於遍歷<code>NodeList</code>或<code>Array</code>，並對每個元素執行一個指定的函數。
+        </li>
+        <li>
+          <code>addEventListener</code>
+          用於向DOM元素添加事件監聽器，在特定事件（如<code>click</code>）觸發時執行指定的回調函數。
+        </li>
+        <li>
+          使用 <code>createElement</code>, <code>classList.add</code>,
+          <code>appendChild</code> 等方法動態創建和修改DOM元素
+        </li>
+        <li>條件語句 <code>if-else</code>，根據不同條件執行不同的代碼塊</li>
+        <li>
+          <code>fetch</code> API 發送HTTP請求，<code>fetch</code> 返回一個
+          <code>Promise</code> ， <code>then</code>方法用於處理
+          <code>Promise</code> 的成功結果
+        </li>
+        <li>
+          使用<code>setTimeout</code>來延遲執行某些操作，以確保數據處理完成
+        </li>
+        <li>通過<code>setInterval()</code>函數每2.5秒切換一次背景圖片</li>
+        <li><code>scrollIntoView()</code>平滑滾動到目標元素</li>
+      </ul>
+      <h2>外部資源</h2>
+      <ul>
+        <li><strong>Bootstrap</strong></li>
+        <ul>
+          <li>使用Bootstrap來快速設計nav與card</li>
+        </ul>
+        <li><strong>Font Awesome</strong></li>
+        <ul>
+          <li>引入Font Awesome庫來使用圖示</li>
+        </ul>
+        <li><strong>第三方API</strong></li>
+        <ul>
+          <li>Google Maps API -顯示台灣的地理位置</li>
+          <li>中央氣象署API-現在天氣觀測報告 & 一週天氣預報</li>
+        </ul>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <section class="follow">
+          <h5>Call</h5>
+          <p>0912-206-631</p>
+        </section>
+      </div>
+      <div class="foot">
+        <section class="follow">
+          <h5>Write</h5>
+          <p>maggie112199@gmail.com</p>
+        </section>
+      </div>
+      <div class="foot">
+        <section class="follow">
+          <h5>Follow</h5>
+        </section>
+        <section class="links">
+          <a href="#"
+            ><img title="github" src="./pictures/github.png" alt="github"
+          /></a>
+          <a href="#"
+            ><img
+              title="instagram"
+              src="./pictures/instagram.png"
+              alt="instagram"
+          /></a>
+          <a href="#"
+            ><img
+              title="fb"
+              src="./pictures/facebook-app-symbol.png"
+              alt="facebook"
+          /></a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

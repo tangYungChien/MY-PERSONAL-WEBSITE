@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tang個人網頁</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/bubble.css" />
+  </head>
+  <body>
+    <nav>
+      <label for="switch"><img src="./pictures/burger.png" /></label
+      ><!--漢堡按鈕圖示-->
+      <input type="checkbox" id="switch" /><!--選單開關-->
+      <ul>
+        <li><a href="#">首頁</a></li>
+        <li><a href="./resume.html">履歷</a></li>
+        <li><a href="./projects.html">作品集</a></li>
+        <li><a href="./contact.html">聯絡方式</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+      </div>
+      <section class="main-area">
+        <div class="info">
+          <h1>嗨，我是Tang!</h1>
+          <h2>畢業於 國立中正大學 <br />資訊管理學碩士班暨醫資所</h2>
+          <div class="meButton">
+            <a href="./resume.html">RESUME</a>
+            <a id="projects" href="./projects.html">PROJECTS</a>
+          </div>
+        </div>
+        <div class="img-area">
+          <img src="./pictures/綠背景照.png" alt="個人照片" />
+        </div>
+      </section>
+      <section class="about-me">
+        <section class="description">
+          <h2>關於我</h2>
+          <p>
+            我的主要技能有 JavaScript , HTML , CSS , React , Machine Learning
+            <br />期望朝前後端開發、軟體開發為目標
+          </p>
+
+          <div class="bar">
+            <p style="margin-top: 2rem">Web Development</p>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Animated striped example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                style="width: 80%"
+              ></div>
+            </div>
+            <p style="margin-top: 2rem">Data Mining</p>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Animated striped example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                style="width: 75%"
+              ></div>
+            </div>
+            <p style="margin-top: 2rem">Data Analysis</p>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Animated striped example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                style="width: 73%"
+              ></div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="portfolio">
+        <h2>作品精選</h2>
+        <div class="card">
+          <div class="card-content">
+            <h3>貳拾飾電商</h3>
+            <p id="top">
+              貳拾飾是一個專門銷售飾品的購物網站，讓用戶能夠輕鬆地瀏覽、選擇並購買商品。
+            </p>
+            <p>使用技術: React , SCSS , JavaScript , node.js , RWD</p>
+            <div class="projectButton">
+              <a href="./store.html" class="learn-more">了解更多</a>
+              <a
+                href="https://e-store-liard.vercel.app/"
+                class="learn-more go"
+                target="_blank"
+                >來去逛逛</a
+              >
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./pictures/twentyFour_demo.JPG" alt="Project Image" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>台灣旅遊網</h3>
+            <p id="top">
+              台灣旅遊網專案旨在提供一個綜合性的平台，遊客能夠輕鬆規劃和安排他們的台灣之旅。
+            </p>
+            <p>使用技術: SCSS, JavaScript , 第三方API , RWD</p>
+            <div class="projectButton">
+              <a href="./taiwan_travel.html" class="learn-more">了解更多</a>
+              <a
+                href="https://taiwan-travel-tang.vercel.app/"
+                class="learn-more go"
+                target="_blank"
+                >來去逛逛</a
+              >
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./pictures/taiwan_demo.JPG" alt="Project Image" />
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="foot">
+          <section class="follow">
+            <h5>Call</h5>
+            <p>0912-206-631</p>
+          </section>
+        </div>
+        <div class="foot">
+          <section class="follow">
+            <h5>Write</h5>
+            <p>maggie112199@gmail.com</p>
+          </section>
+        </div>
+        <div class="foot">
+          <section class="follow">
+            <h5>Follow</h5>
+          </section>
+          <section class="links">
+            <a href="#"
+              ><img title="github" src="./pictures/github.png" alt="github"
+            /></a>
+            <a href="#"
+              ><img
+                title="instagram"
+                src="./pictures/instagram.png"
+                alt="instagram"
+            /></a>
+            <a href="#"
+              ><img
+                title="fb"
+                src="./pictures/facebook-app-symbol.png"
+                alt="facebook"
+            /></a>
+          </section>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tang個人網頁</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <label for="switch"><img src="./pictures/burger.png" /></label
+      ><!--漢堡按鈕圖示-->
+      <input type="checkbox" id="switch" /><!--選單開關-->
+      <ul>
+        <li><a href="./index.html">首頁</a></li>
+        <li><a href="./resume.html">履歷</a></li>
+        <li><a href="./projects.html">作品集</a></li>
+        <li><a href="./contact.html">聯絡方式</a></li>
+      </ul>
+    </nav>
+
+    <div class="learnMorePage">
+      <div class="learnMorePage_title">
+        <h1>貳拾飾電商</h1>
+        <a
+          href="https://e-store-liard.vercel.app/"
+          class="learn-more go"
+          target="_blank"
+          >來去逛逛</a
+        >
+      </div>
+
+      <div class="image">
+        <img src="./pictures/twentyFour_demo.JPG" alt="" />
+      </div>
+      <p>
+        貳拾飾是一個專門銷售飾品的購物網站，讓用戶能夠輕鬆地瀏覽、選擇並購買商品。專案採用
+        React
+        框架開發前端，並結合node.js的Express框架和MongoDB資料庫，執行後端功能，實現產品展示、用戶認證、購物車、訂單管理等核心功能。
+      </p>
+      <h2>前端功能</h2>
+      <h3>產品展示與分類過濾</h3>
+      <ul>
+        <li>主頁展示所有產品，並可根據分類顯示產品</li>
+      </ul>
+      <h3>產品詳細頁面</h3>
+      <ul>
+        <li>提供每個產品的詳細訊息，包括名稱、價格、描述、顏色等</li>
+        <li>用戶可以選擇數量和顏色，並將產品加入購物車</li>
+      </ul>
+      <h3>購物車功能</h3>
+      <ul>
+        <li>用戶可以在購物車頁面查看已選購的商品，修改數量或刪除商品</li>
+        <li>動態計算購物車內商品的總金額，方便用戶查看總消費</li>
+      </ul>
+      <h3>結帳與訂單摘要</h3>
+      <ul>
+        <li>用戶在結帳頁面完成訂單，並生成訂單訊息</li>
+      </ul>
+      <h2>後端功能</h2>
+      <h3>用戶註冊與登入</h3>
+      <ul>
+        <li>包含用戶登入和註冊功能，提升網站互動性。</li>
+      </ul>
+      <h3>訂單管理</h3>
+      <ul>
+        <li>用戶可以提交訂單，且可以查詢該用戶的歷史訂單</li>
+      </ul>
+
+      <h2>技術棧</h2>
+      <h3>React</h3>
+      <ul>
+        <li>React Router：進行客戶端路由管理，並實現SPA</li>
+        <li>狀態管理：使用 useState 和 useEffect 管理和監控應用程式狀態</li>
+        <li>
+          組件化開發：採用組件化方法開發頁面和功能，包括
+          Nav、Footer、ProductGrid 等組件
+        </li>
+        <li>自定義Hook：使用自定義鉤子 useCart 處理購物車相關邏輯</li>
+      </ul>
+      <h3>backend</h3>
+      <ul>
+        <li>Express：使用Express框架，更迅速的建立伺服器</li>
+        <li>RESTful API : 構建RESTful API，包含使用者註冊、登入和訂單管理</li>
+        <li>MongoDB : 連接 MongoDB 資料庫，並使用 Mongoose 進行數據模型管理</li>
+        <li>Bcrypt : 對用戶密碼進行加密存儲，確保密碼的安全性</li>
+        <li>Connect Flash : 顯示用戶操作成功或失敗的提示訊息</li>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <section class="follow">
+          <h5>Call</h5>
+          <p>0912-206-631</p>
+        </section>
+      </div>
+      <div class="foot">
+        <section class="follow">
+          <h5>Write</h5>
+          <p>maggie112199@gmail.com</p>
+        </section>
+      </div>
+      <div class="foot">
+        <section class="follow">
+          <h5>Follow</h5>
+        </section>
+        <section class="links">
+          <a href="#"
+            ><img title="github" src="./pictures/github.png" alt="github"
+          /></a>
+          <a href="#"
+            ><img
+              title="instagram"
+              src="./pictures/instagram.png"
+              alt="instagram"
+          /></a>
+          <a href="#"
+            ><img
+              title="fb"
+              src="./pictures/facebook-app-symbol.png"
+              alt="facebook"
+          /></a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

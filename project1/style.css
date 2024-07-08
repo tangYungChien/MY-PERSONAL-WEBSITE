@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+header div.top {
+  padding: 1rem;
+  background-image: url(./images/background.png);
+}
+
+header div.top h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+header div.top h3 {
+  font-size: 1rem;
+}
+header nav {
+  background-color: black;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 0.8rem 1.2rem;
+}
+header nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.25rem;
+  /* transition: all 0.2s; */
+}
+header nav ul li a:hover {
+  color: rgb(242, 242, 6);
+}
+
+.active {
+  color: rgb(242, 242, 6);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main.no-flex {
+  display: block;
+}
+
+main section {
+  padding: 1rem;
+}
+
+section.left {
+  flex: 1 1 200px;
+}
+section.left img {
+  width: 90%;
+}
+section.left h3 {
+  margin-bottom: 1rem;
+}
+section.left table {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+section.left td {
+  padding: 0.3rem 0.5rem;
+}
+
+section.right {
+  flex: 4 1 500px;
+}
+section.right h3 {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+p {
+  padding: 0.5rem 0rem;
+}
+section.right ul {
+  margin-left: 1rem;
+}
+.player {
+  margin: 2rem;
+  border: 2px solid rgb(208, 212, 182);
+  padding: 0.5rem;
+}
+.player h4 {
+  font-size: 1.5rem;
+  color: rgb(23, 114, 116);
+  font-weight: 600;
+}
+.player h5 {
+  font-size: 1.05rem;
+  color: rgb(51, 136, 138);
+  font-weight: 600;
+}
+div.japan {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+div.japan div.image {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+div.japan div.image img {
+  width: 100%;
+}
+
+div.japan div.info {
+  flex: 3 1 600px;
+  padding: 1.5rem;
+}
+
+div.japan ul {
+  margin-left: 1rem;
+}
+
+div.competition {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+div.competition div.text {
+  flex: 5 1 300px;
+}
+
+#piechart {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+
+div.competition div.text h3 {
+  font-size: 2rem;
+  color: rgb(32, 109, 112);
+  font-weight: bold;
+}
+
+div.china,
+div.china-contest {
+  padding: 1rem;
+}
+
+div.china-contest table td {
+  padding: 0.3rem 1rem;
+}
+div.china-contest table th {
+  padding: 0.5rem 1rem;
+  background-color: rgb(28, 130, 133);
+  color: white;
+}
+
+.china h2,
+.china-contest h2 {
+  color: rgb(28, 130, 133);
+  font-weight: bold;
+}
+
+.taiwan h3 {
+  color: rgb(28, 130, 133);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
